@@ -57,11 +57,11 @@ The architecture separates execution responsibilities into a **local control tie
 
 | Component | Microcontroller | Pin / Interface | Description |
 | :--- | :--- | :--- | :--- |
-| **DHT11 Sensor** | ATmega328P | Digital Pin `2` | Temperature & Relative Humidity Data |
+| **DHT11 Sensor** | ATmega328P | Digital Pin `4` | Temperature & Relative Humidity Data |
 | **Soil Moisture Sensor** | ATmega328P | Analog Pin `A0` | Soil Moisture Analog Level |
-| **TM1637 Display (CLK)** | ATmega328P | Digital Pin `6` | Clock line for 4-digit display |
-| **TM1637 Display (DIO)** | ATmega328P | Digital Pin `5` | Data input/output line for display |
-| **Ventilation Fan Relay**| ATmega328P | Digital Pin `8` | MOSFET / Relay control for exhaust fan |
+| **TM1637 Display (CLK)** | ATmega328P | Digital Pin `2` | Clock line for 4-digit display |
+| **TM1637 Display (DIO)** | ATmega328P | Digital Pin `3` | Data input/output line for display |
+| **Ventilation Fan Relay**| ATmega328P | Digital Pin `5` | MOSFET / Relay control for exhaust fan |
 | **Water Pump Driver** | ATmega328P | Digital Pin `9` | MOSFET driver for 12V DC water pump |
 | **UART Bridge (TX $
 ightarrow$ RX)**| ATmega328P $
