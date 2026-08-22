@@ -3,14 +3,14 @@
 #include <PubSubClient.h>
 
 // WiFi Configuration
-const char* ssid = "Hadi_Jad";
-const char* password = "03528373M";
+const char* ssid = "WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
 
 // HiveMQ SSL Configuration
-const char* mqtt_server = "48e3b1d5a4f5449cbfd05672763e2ee3.s1.eu.hivemq.cloud";
-const int mqtt_port = 8883;
-const char* mqtt_user = "Controller";
-const char* mqtt_pass = "1111111111@Controller";
+const char* mqtt_server = "example.s1.eu.hivemq.cloud";
+const int mqtt_port = MQTT_port_number;
+const char* mqtt_user = "MQTT_USER_USENAME";
+const char* mqtt_pass = "MQTT_USER_PASSWORD";
 
 const int ledPin = 12;
 
