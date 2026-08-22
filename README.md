@@ -46,8 +46,8 @@ The architecture separates execution responsibilities into a **local control tie
   * **ATmega328P:** Handles low-latency sensor sampling, local display refresh rates, and hard safety timers for irrigation and ventilation.
   * **ESP8266:** Handles network connectivity, automatic Wi-Fi/MQTT reconnection loops, and bi-directional payload transfer.
 * **Automated Environmental Control:**
-  * Dynamic actuation of ventilation fan relay based on ambient temperature and relative humidity thresholds.
-  * Timed irrigation pump actuation (1-second watering pulse with a mandatory 10-minute non-blocking software cooldown guard to prevent soil over-saturation and motor burn-out).
+  * Dynamic actuation of 5V ventilation fan using MOSFET in switch mode based on ambient temperature and relative humidity thresholds.
+  * Timed irrigation 12V pump actuation (1-second watering pulse with a mandatory 10-minute non-blocking software cooldown guard to prevent soil over-saturation and motor burn-out).
 * **Local Visual Status:** Real-time metrics output on a TM1637 4-digit 7-segment display.
 * **Cloud Telemetry & Remote Override:** Transmits telemetry payloads to **HiveMQ Cloud** and Listens for remote manual control commands via subscribed MQTT topics.
 
